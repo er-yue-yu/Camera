@@ -47,8 +47,8 @@ def stereo_calibration():
     print(f"右相机重投影误差: {right_error}")
 
     # ==================== 棋盘格参数 ====================
-    chessboard_size = (11, 8)  # (列, 行)：内部角点数（非方格数）
-    square_size = 0.02        # 每个方格大小（米）
+    chessboard_size = (15, 8)  # (列, 行)：内部角点数（非方格数）
+    square_size = 0.0085        # 每个方格大小（米）
 
     # 准备棋盘格在世界坐标中的 3D 点
     objp = np.zeros((chessboard_size[0] * chessboard_size[1], 3), np.float32)

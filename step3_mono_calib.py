@@ -14,8 +14,8 @@ def calibrate_camera(images_folder, output_file):
     """
 
     # 固定参数
-    chessboard_size = (11, 8)  # 棋盘格内角点数量 (9列, 6行)
-    square_size = 0.02  # 棋盘格方格实际尺寸 (米)
+    chessboard_size = (15, 8)  # 棋盘格内角点数量 (9列, 6行)
+    square_size = 0.0085  # 棋盘格方格实际尺寸 (米)
 
     # 终止条件
     criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
